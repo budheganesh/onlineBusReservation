@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ h1{
+    text-align: center;
+ }
+ .outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.seat{
+    height: 790px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+  p{
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+    <!-- margin-left: 177px; -->
+    <h1>Book Seat for</h1> <h1 style="color: red;"><?php echo $schedule_result['bus_name']; ?></h1>
+    <div class="outer">
+    <div class="seat">
+     <p>=></p>
+    <button value="1" onclick="alert('This seat is Driver side Please choose different seat');" style="background-color:red; margin-left: 195px;">.</button>
+    <br>
+    <br>
+    <button value="1" onclick="alert('This seat is Conductor side Please choose different seat');" style="background-color:red;">.</button>
+    <button value="3" onclick="seatbook(this)">1</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">2</button>
+    <button value="1" onclick="seatbook(this)">3</button>
+    <button value="1" onclick="seatbook(this)">7</button>
+    <button value="1" onclick="seatbook(this)">6</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">5</button>
+    <button value="1" onclick="seatbook(this)">4</button>
+    <button value="1" onclick="seatbook(this)">8</button>
+    <button value="1" onclick="seatbook(this)">9</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">10</button>
+    <button value="1" onclick="seatbook(this)">11</button>
+    <button value="1" onclick="seatbook(this)">15</button>
+    <button value="1" onclick="seatbook(this)">14</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">13</button>
+    <button value="1" onclick="seatbook(this)">12</button>
+
+    <button value="1" onclick="seatbook(this)">16</button>
+    <button value="1" onclick="seatbook(this)">17</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">18</button>
+    <button value="1" onclick="seatbook(this)">19</button>
+
+    <button value="1" onclick="seatbook(this)">23</button>
+    <button value="1" onclick="seatbook(this)">22</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">21</button>
+    <button value="1" onclick="seatbook(this)">20</button>
+
+    <button value="1" onclick="seatbook(this)">24</button>
+    <button value="1" onclick="seatbook(this)">25</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">26</button>
+    <button value="1" onclick="seatbook(this)">27</button>
+    <button value="1" onclick="seatbook(this)">31</button>
+    <button value="1" onclick="seatbook(this)">30</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">29</button>
+    <button value="1" onclick="seatbook(this)">28</button>
+    <button value="1" onclick="seatbook(this)">32</button>
+    <button value="1" onclick="seatbook(this)">33</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">34</button>
+    <button value="1" onclick="seatbook(this)">35</button>
+    <button value="1" onclick="seatbook(this)">39</button>
+    <button value="1" onclick="seatbook(this)">38</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">37</button>
+    <button value="1" onclick="seatbook(this)">36</button>
+    <button value="1" onclick="seatbook(this)">40</button>
+    <button value="1" onclick="seatbook(this)">41</button>
+    <button value="1" onclick="seatbook(this)" style="margin-left: 50px;">42</button>
+    <button value="1" onclick="seatbook(this)">43</button>
+
+
+    <button value="1" onclick="seatbook(this)" style="height: 45px; width:45px">48</button>
+    <button value="1" onclick="seatbook(this)" style="height: 45px; width:45px">47</button>
+    <button value="1" onclick="seatbook(this)" style="height: 45px; width:45px">46</button>
+    <button value="1" onclick="seatbook(this)" style="height: 45px; width:45px">45</button>
+    <button value="1" onclick="seatbook(this)" style="height: 45px; width:45px">44</button>
+    </div>
+    </div>
+    <script>
+        function seatbook(btn){
+           btn1=btn.innerText;
+           console.log(btn1);
+           document.write(btn1);
+        }
+    </script>
+</body>
+</html>
